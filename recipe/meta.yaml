@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pyviz/panel/archive/v{{ version }}.tar.gz
-  sha256: f487334bc23290cfbf51096c41a1b3aa59cde78a9f5ff1ed1b92a8b7a72128be
+  sha256: 48debc60f06ef2940fb10a5412c3c61bcec3a069961440221690cfe86059e7f9
 
 build:
   number: 0
