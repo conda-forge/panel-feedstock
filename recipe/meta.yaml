@@ -19,7 +19,7 @@ requirements:
     - pip
     - param >=1.8.1
   run:
-    - bokeh >=0.12.15
+    - bokeh >=1.0.0
     - param >=1.8.1
     - pyviz_comms >=0.6.0
     - markdown
