@@ -17,17 +17,15 @@ requirements:
   host:
     - python
     - pip
-    - param >=1.7.0
+    - param >=1.8.1
     - pyct >=0.4.4
     - setuptools >=30.3.0
   run:
     - bokeh >=1.0.0
-    - param >=1.7.0
+    - param >=1.8.1
     - pyviz_comms >=0.6.0
     - markdown
     - testpath <0.4
-
-    # "param >=1.7.0" "pyct >=0.4.4" "setuptools >=30.3.0"
 
 test:
   imports:
