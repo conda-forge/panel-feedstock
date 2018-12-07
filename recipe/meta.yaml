@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.3.1" %}
 
 package:
   name: panel
@@ -6,20 +6,23 @@ package:
 
 source:
   url: https://github.com/pyviz/panel/archive/v{{ version }}.tar.gz
-  sha256: f487334bc23290cfbf51096c41a1b3aa59cde78a9f5ff1ed1b92a8b7a72128be
+  sha256: 7eb64e7f4c92858219283a84cb5a008cc31e95e879e9bb40ae472ef6c9a83edc
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
 requirements:
   host:
     - python
     - pip
     - param >=1.8.1
+    - pyct >=0.4.4
+    - setuptools >=30.3.0
+    - nodejs ==9.11.1
   run:
-    - bokeh >=0.12.15
+    - bokeh >=1.0.0
     - param >=1.8.1
     - pyviz_comms >=0.6.0
     - markdown
