@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - param >=1.8.1
     - pyct >=0.4.4
     - setuptools >=30.3.0
+    - nodejs ==9.11.1
   run:
     - bokeh >=1.0.0
     - param >=1.8.1
