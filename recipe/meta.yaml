@@ -9,7 +9,7 @@ source:
   sha256: 3f59c1b5c469487f399978014f6b3be978683b723595a3a9432a723a43e693d0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
@@ -26,6 +26,7 @@ requirements:
     - param >=1.9.0
     - pyviz_comms >=0.7.2
     - markdown
+    - pyct >=0.4.4
     - testpath <0.4
 
 test:
