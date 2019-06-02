@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: panel
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 3f59c1b5c469487f399978014f6b3be978683b723595a3a9432a723a43e693d0
+  sha256: 1da6ccbb96e833a74111010535ce0ff1c8a627d7919b271ee2cf8237c48b3878
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
