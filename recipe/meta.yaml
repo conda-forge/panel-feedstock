@@ -1,4 +1,4 @@
-{% set version = "0.6.4" %}
+{% set version = "0.7.0" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 9b86a827f24dcfd1b6d821836e691fca7aab21b79a293031297f83cf2f8d6cef
+  sha256: 71d446f469b424cb190bc896e78d0415b2bbebf17c6e5b024ed1a73b4448f8f4
 
 build:
   number: 0
@@ -18,13 +18,14 @@ requirements:
     - python
     - pip
     - pyct >=0.4.4
+    - nodejs >=9.11.1
+    - bokeh >=1.4.0
   run:
-    - bokeh >=1.3.0
-    - param >=1.9.1
+    - bokeh >=1.4.0
+    - param >=1.9.2
     - pyviz_comms >=0.7.2
     - markdown
     - pyct >=0.4.4
-
 test:
   imports:
     - panel
