@@ -19,6 +19,7 @@ requirements:
     - pip
     - pyct >=0.4.4
     - nodejs >=9.11.1
+    - bokeh >=1.4.0
   run:
     - bokeh >=1.4.0
     - param >=1.9.2
