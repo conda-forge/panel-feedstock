@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 71d446f469b424cb190bc896e78d0415b2bbebf17c6e5b024ed1a73b4448f8f4
+  sha256: f0be97ad3c6d73d2d55415b389255ac1d46d94cac2fa918d97f7ba66ebd2c674
 
 build:
   number: 0
@@ -21,17 +21,18 @@ requirements:
     - nodejs >=9.11.1
     - bokeh >=1.4.0
   run:
-    - bokeh >=1.4.0
+    - bokeh >=1.4.0,<2.0
     - param >=1.9.2
-    - pyviz_comms >=0.7.2
+    - pyviz_comms >=0.7.3
     - markdown
     - pyct >=0.4.4
+    - tqdm
 test:
   imports:
     - panel
 
 about:
-  home: https://panel.pyviz.org
+  home: https://panel.holoviz.org
   summary: A high-level Python toolkit for composing widgets and plots
   description: |
     Panel provides tools for easily composing widgets, plots, tables, and other
