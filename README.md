@@ -1,7 +1,7 @@
 About panel
 ===========
 
-Home: https://panel.pyviz.org
+Home: https://panel.holoviz.org
 
 Package license: BSD-3-Clause
 
