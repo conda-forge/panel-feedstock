@@ -21,6 +21,7 @@ requirements:
     # These are also needed at build time.
     - pyct
     - bokeh >=2.0
+    - nodejs >=10.13.0
   run:
     - python >=3
     - bokeh >=2.0
