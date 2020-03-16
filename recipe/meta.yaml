@@ -18,7 +18,9 @@ requirements:
   host:
     - python
     - pip
+    # These are also needed at build time.
     - pyct
+    - bokeh >=2.0
   run:
     - python
     - bokeh >=2.0
