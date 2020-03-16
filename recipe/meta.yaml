@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     # These are also needed at build time.
     - pyct
     - bokeh >=2.0
   run:
-    - python
+    - python >=3
     - bokeh >=2.0
     - markdown
     - param >=1.9.2
