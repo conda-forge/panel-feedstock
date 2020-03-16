@@ -11,25 +11,31 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points: panel = panel.cli:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python
     - pip
-    - pyct >=0.4.4
-    - nodejs >=9.11.1
-    - bokeh >=1.4.0
   run:
-    - bokeh >=1.4.0,<2.0
-    - param >=1.9.2
-    - pyviz_comms >=0.7.3
+    - python
+    - bokeh >=2.0
     - markdown
+    - param >=1.9.2
     - pyct >=0.4.4
+    - pyviz_comms >=0.7.4
     - tqdm
+
 test:
   imports:
     - panel
+    - panel.io
+  commands:
+    - pip check
+    - panel --help
+  requires:
+    - pip
 
 about:
   home: https://panel.holoviz.org
