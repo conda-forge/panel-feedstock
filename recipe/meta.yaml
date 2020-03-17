@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.9.1" %}
 
 package:
   name: panel
@@ -6,30 +6,41 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 57128ff329a6646651a234a3567bf1a40411005d94e466f2c3b21e2216ab8579
+  sha256: bdced1cbe5b7b2b9d15797ae03ee0ce011dd361dffd494405e5e521690eff73c
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+    - panel = panel.cli:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
-    - pyct >=0.4.4
-    - nodejs >=9.11.1
-    - bokeh >=1.4.0
+    # These are also needed at build time.
+    - pyct
+    - bokeh >=2.0
+    - nodejs >=10.13.0
   run:
-    - bokeh >=1.4.0,<2.0
-    - param >=1.9.2
-    - pyviz_comms >=0.7.3
+    - python >=3
+    - bokeh >=2.0
     - markdown
+    - param >=1.9.2
     - pyct >=0.4.4
+    - pyviz_comms >=0.7.4
     - tqdm
+
 test:
   imports:
     - panel
+    - panel.io
+  commands:
+    - pip check
+    - panel --help
+  requires:
+    - pip
 
 about:
   home: https://panel.holoviz.org
