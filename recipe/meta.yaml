@@ -44,7 +44,7 @@ test:
 
 about:
   home: https://panel.holoviz.org
-  summary: A high-level Python toolkit for composing widgets and plots
+  summary: A high-level app and dashboarding solution for Python
   description: |
     Panel provides tools for easily composing widgets, plots, tables, and other
     viewable objects and controls into control panels, apps, and dashboards.
