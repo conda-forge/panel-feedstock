@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A high-level Python toolkit for composing widgets and plots
+Summary: A high-level app and dashboarding solution for Python
 
 Panel provides tools for easily composing widgets, plots, tables, and other
 viewable objects and controls into control panels, apps, and dashboards.
