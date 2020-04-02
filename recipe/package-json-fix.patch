@@ -1,0 +1,12 @@
+diff --git a/panel/package.json b/panel/package.json
+index 193a464..6e19698 100644
+--- a/panel/package.json
++++ b/panel/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@holoviz/panel",
+-  "version": "0.9.4",
++  "version": "0.9.4-1",
+   "description": "A high level dashboarding library for python visualization libraries.",
+   "license": "BSD-3-Clause",
+   "repository": {
