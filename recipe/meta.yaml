@@ -7,6 +7,9 @@ package:
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
   sha256: dcd5b7f078c8b4778aab58dfe3c6d9880dd7ff2d0c19bfef52db941be1dd0534
+  patches:
+    # Patch issue with npm package version
+    - package-json-fix.patch
 
 build:
   number: 0
