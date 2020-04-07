@@ -9,6 +9,7 @@ source:
   sha256: 53340615f30f67f3182793695ebe52bf25e7bbb0751aba6f29763244350d0f42
   patches:
     - add-index-ts.patch
+    - index-ts-fix.patch
 
 build:
   number: 1
