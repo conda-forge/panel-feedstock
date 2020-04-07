@@ -16,7 +16,9 @@ build:
   noarch: python
   entry_points:
     - panel = panel.cli:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - rm -r panel/dist
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
