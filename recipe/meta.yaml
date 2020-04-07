@@ -7,8 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
   sha256: 53340615f30f67f3182793695ebe52bf25e7bbb0751aba6f29763244350d0f42
-  patches:
-    - add-index-ts.patch
     - index-ts-fix.patch
 
 build:
@@ -18,6 +16,7 @@ build:
     - panel = panel.cli:main
   script:
     - rm -r panel/dist
+    - cp {{ RECIPE_DIR }}/index.ts {{ SRC_DIR }}/panel/
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
