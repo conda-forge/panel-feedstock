@@ -15,6 +15,7 @@ build:
   entry_points:
     - panel = panel.cli:main
   script:
+    # first two lines can probably be dropped in the next release.
     - rm -r panel/dist
     - cp {{ RECIPE_DIR }}/index.ts {{ SRC_DIR }}/panel/
     - {{ PYTHON }} -m pip install . -vv
