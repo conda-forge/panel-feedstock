@@ -31,7 +31,7 @@ requirements:
     - nodejs >=10.13.0
   run:
     - python >=3
-    - bokeh >=2.0
+    - bokeh >=2.1
     - markdown
     - param >=1.9.3
     - pyct >=0.4.4
