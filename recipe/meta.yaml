@@ -1,4 +1,4 @@
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: panel
@@ -6,12 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 53340615f30f67f3182793695ebe52bf25e7bbb0751aba6f29763244350d0f42
-  patches:
-    - index-ts-fix.patch
+  sha256: 8a64c988f54c16ca3c9b4b94ec08ba5e26694eebff83d56d14b8e554c37b1243
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - panel = panel.cli:main
@@ -31,7 +29,7 @@ requirements:
     - nodejs >=10.13.0
   run:
     - python >=3
-    - bokeh >=2.0
+    - bokeh >=2.1
     - markdown
     - param >=1.9.3
     - pyct >=0.4.4
