@@ -1,4 +1,4 @@
-{% set version = "0.9.7" %}
+{% set version = "0.10.0" %}
 
 package:
   name: panel
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 2e86d82bdd5e7664bf49558eedad62b664d5403ec9e422e5ddfcf69e3bd77318
+  sha256: 06b851cddcf3423788502fbc4bf954d5b402314190da267e33cabe81e071ec46
 
 build:
   number: 0
   noarch: python
   entry_points:
-    - panel = panel.cli:main
+    - panel = panel.command:main
   script:
     # first two lines can probably be dropped in the next release.
     - rm -r panel/dist
@@ -25,13 +25,15 @@ requirements:
     - pip
     # These are also needed at build time.
     - pyct
-    - bokeh >=2.0
+    - bokeh >=2.2
     - nodejs >=10.13.0
+    - pyviz_comms >=0.7.4
+    - requests
   run:
     - python >=3
-    - bokeh >=2.1
+    - bokeh >=2.2
     - markdown
-    - param >=1.9.3
+    - param >=1.10.0
     - pyct >=0.4.4
     - pyviz_comms >=0.7.4
     - tqdm
