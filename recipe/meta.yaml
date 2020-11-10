@@ -9,14 +9,11 @@ source:
   sha256: 92cdda28805b6504e2f238eae8d7106b356ade2a33e020d3583bead9a573ac10
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - panel = panel.command:main
   script:
-    # first two lines can probably be dropped in the next release.
-    - rm -r panel/dist
-    - cp {{ RECIPE_DIR }}/index.ts {{ SRC_DIR }}/panel/
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
