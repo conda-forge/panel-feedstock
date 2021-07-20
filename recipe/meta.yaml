@@ -28,6 +28,7 @@ requirements:
     - requests
     - packaging
     - tqdm
+    - bleach
   run:
     - python >=3
     - bokeh >=2.3,<2.4
