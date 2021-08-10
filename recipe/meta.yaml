@@ -1,4 +1,4 @@
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 733bb6ce4ecbc6d589b471875c9f0b3e5540c9a5ea3c63ffa6f6b969989411e1
+  sha256: e4898d60abdb82f8a429df7f59dbf8bcaf7e19b3e633555512ceb4ce06678458
 
 build:
   number: 0
