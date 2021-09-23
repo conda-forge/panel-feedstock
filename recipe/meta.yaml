@@ -1,4 +1,4 @@
-{% set version = "0.12.1" %}
+{% set version = "0.12.3" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: e4898d60abdb82f8a429df7f59dbf8bcaf7e19b3e633555512ceb4ce06678458
+  sha256: c7e4049b457af6dd548806db3fee593b05a67a14d1f4596ce888217f2a712281
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
     # These are also needed at build time.
     - pyct
-    - bokeh >=2.3,<2.4
+    - bokeh >=2.4,<2.5
     - nodejs >=10.13.0
     - pyviz_comms >=0.7.4
     - requests
@@ -31,7 +31,7 @@ requirements:
     - bleach
   run:
     - python >=3
-    - bokeh >=2.3,<2.4
+    - bokeh >=2.4,<2.5
     - markdown
     - param >=1.10.0
     - pyct >=0.4.4
