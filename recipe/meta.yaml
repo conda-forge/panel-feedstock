@@ -32,6 +32,7 @@ requirements:
     - bleach
   run:
     - python >=3
+    - setuptools >=42,<61
     - bokeh >=2.4,<2.5
     - markdown
     - param >=1.10.0
