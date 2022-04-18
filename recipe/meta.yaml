@@ -18,29 +18,29 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
     - setuptools >=42,<61
     # These are also needed at build time.
-    - pyct
+    - bleach
     - bokeh >=2.4,<2.5
     - nodejs >=10.13.0
+    - packaging
+    - pyct-core >=0.12.0
     - pyviz_comms >=0.7.4
     - requests
-    - packaging
     - tqdm >=4.48.0
-    - bleach
   run:
-    - python >=3
-    - setuptools >=42,<61
+    - python >=3.6
+    - bleach
     - bokeh >=2.4,<2.5
     - markdown
-    - param >=1.10.0
-    - pyct >=0.4.4
+    - param >=1.12.0
+    - pyct-core >=0.12.0
     - pyviz_comms >=0.7.4
-    - tqdm >=4.48.0
     - requests
-    - bleach
+    - setuptools >=42,<61
+    - tqdm >=4.48.0
 
 test:
   imports:
