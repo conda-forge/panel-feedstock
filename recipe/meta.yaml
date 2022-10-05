@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools >=42
     # These are also needed at build time.
@@ -32,7 +32,7 @@ requirements:
     - requests
     - tqdm >=4.48.0
   run:
-    - python >=3.6
+    - python >=3.7
     - bleach
     - bokeh >=2.4,<2.5
     - markdown
