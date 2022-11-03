@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 3b1723010b9851cb8f49b247f3efc50a340d6cc85e512029e0ac8edc76c051fc
+  sha256: 0922421e5625498a5041123c01e8be7e12c350ce3ef180c534b45419bf20052b
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - setuptools >=42
     # These are also needed at build time.
     - bleach
-    - bokeh >=2.4,<2.5
+    - bokeh >=2.4.3,<2.5
     - nodejs >=10.13.0
     - packaging
     - param >=1.9.0
@@ -42,6 +42,7 @@ requirements:
     - requests
     - setuptools >=42
     - tqdm >=4.48.0
+    - typing_extensions
 
 test:
   imports:
