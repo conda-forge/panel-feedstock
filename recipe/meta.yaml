@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: panel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 4f2423448dd685f4c8c0e6a829ad902e031bed570ae52df912050bd6d3e80573
+  sha256: 9fbd208858ace225dd7d308ebdfa0691d8d9e491db406c2e93ee615694afd341
 
 build:
   number: 0
@@ -45,7 +45,7 @@ requirements:
     - typing_extensions
     - markdown-it-py
     - linkify-it-py
-    - mdit-py-plugins 
+    - mdit-py-plugins
 
 test:
   imports:
