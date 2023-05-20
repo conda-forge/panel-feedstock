@@ -7,7 +7,7 @@ Home: https://panel.holoviz.org
 
 Package license: BSD-3-Clause
 
-Summary: A high-level app and dashboarding solution for Python
+Summary: The powerful data exploration & web app framework for Python.
 
 Panel provides tools for easily composing widgets, plots, tables, and other
 viewable objects and controls into control panels, apps, and dashboards.
