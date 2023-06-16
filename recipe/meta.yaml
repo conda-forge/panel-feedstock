@@ -9,7 +9,7 @@ source:
   sha256: 76ba4eac8bb178d032e3dd2a9c966cc8c088425f86eb567b06ed13baa84b4eb0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - panel = panel.command:main
@@ -42,7 +42,7 @@ requirements:
     - requests
     - tqdm >=4.48.0
     - typing_extensions
-    - markdown-it-py
+    - markdown-it-py <3
     - linkify-it-py
     - mdit-py-plugins
   run_constrained:
