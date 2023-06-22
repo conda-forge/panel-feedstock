@@ -151,6 +151,3 @@ Feedstock Maintainers
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@philippjfr](https://github.com/philippjfr/)
 
-
-<!-- dummy commit to enable rerendering -->
-
