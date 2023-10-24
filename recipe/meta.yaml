@@ -46,7 +46,7 @@ requirements:
     - linkify-it-py
     - mdit-py-plugins
   run_constrained:
-    - holoviews >=1.16.0
+    - holoviews >=1.17.0
 
 test:
   imports:
