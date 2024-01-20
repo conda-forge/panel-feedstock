@@ -33,7 +33,6 @@ requirements:
     - tqdm >=4.48.0
   run:
     - python >=3.9
-    - bleach
     - packaging
     - bokeh >=3.2.0,<3.4
     - markdown
