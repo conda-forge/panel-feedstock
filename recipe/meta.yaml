@@ -22,7 +22,6 @@ requirements:
     - pip
     - setuptools >=42
     # These are also needed at build time.
-    - bleach
     - bokeh >=3.2.0,<3.4
     - nodejs >=10.13.0
     - packaging
@@ -33,6 +32,7 @@ requirements:
     - tqdm >=4.48.0
   run:
     - python >=3.9
+    - bleach
     - packaging
     - bokeh >=3.2.0,<3.4
     - markdown
