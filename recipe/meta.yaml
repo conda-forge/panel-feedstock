@@ -23,6 +23,7 @@ requirements:
     - setuptools >=42
     # These are also needed at build time.
     - bokeh >=3.4.0,<3.5
+    - markdown
     - nodejs >=10.13.0
     - packaging
     - param >=2.0.0
