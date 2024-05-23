@@ -37,7 +37,7 @@ requirements:
     - packaging
     - bokeh >=3.4.0,<3.5
     - markdown
-    - param >=2.0.0,<3
+    - param >=2.1.0,<3
     - pyviz_comms >=0.7.4
     - requests
     - tqdm >=4.48.0
