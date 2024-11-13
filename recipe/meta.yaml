@@ -1,11 +1,12 @@
 {% set version = "1.5.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: panel
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/panel/panel-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
   sha256: 7644e87afe9b94c32b4fca939d645c5b958d671691bd841d3391e31941090092
 
 build:
@@ -18,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - nodejs >=18
     # These are also needed at build time.
@@ -30,7 +31,7 @@ requirements:
     - requests
     - packaging
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - bokeh >=3.5.0,<3.7.0
     - param >=2.1.0,<3.0
     - pyviz_comms >=2.0.0
@@ -55,6 +56,7 @@ test:
     - pip check
     - panel --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
