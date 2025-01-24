@@ -1,4 +1,4 @@
-{% set version = "1.5.5" %}
+{% set version = "1.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 420636b0718b7a65c6d059bb517f4d9ffe651bbc60e7369f52c27d7fa7535bbe
+  sha256: 6dd27b3dc7d161a08327b02b0c6dde5fa09bed56bb6ce479c56fca94d4f3308e
 
 build:
   number: 0
