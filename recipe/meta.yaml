@@ -10,7 +10,7 @@ source:
   sha256: 6dd27b3dc7d161a08327b02b0c6dde5fa09bed56bb6ce479c56fca94d4f3308e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - panel = panel.command:main
