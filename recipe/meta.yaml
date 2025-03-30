@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 75f95701f03f6b64d00d69a5369c3f521126e697fb855e717816c4a02ddbfd57
+  sha256: a88a96bb76a2e4228357940679799c042b459beadfc0d3f6558e2f013903a9a1
 
 build:
   number: 0
@@ -26,13 +26,13 @@ requirements:
     - hatchling
     - hatch-vcs
     - param >=2.1.0
-    - bokeh >=3.5.0,<3.7.0
+    - bokeh >=3.5.0,<3.8.0
     - pyviz_comms >=0.7.4
     - requests
     - packaging
   run:
     - python >={{ python_min }}
-    - bokeh >=3.5.0,<3.7.0
+    - bokeh >=3.5.0,<3.8.0
     - param >=2.1.0,<3.0
     - pyviz_comms >=2.0.0
     - markdown
