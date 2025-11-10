@@ -1,4 +1,4 @@
-{% set version = "1.8.2" %}
+{% set version = "1.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 30a522739b8f93512b1d2a739c26f8bd9674b70b73850ad39b942685703f6a62
+  sha256: 192a25fa4afdb25c5d0bf00d3749bb1b3601f25cddb76492e355fa278f91fce8
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - requests
     - packaging
   run:
+    - narwhals >=2
     - python >={{ python_min }}
     - bokeh >=3.7.0,<3.9.0
     - param >=2.1.0,<3.0
