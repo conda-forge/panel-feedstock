@@ -40,6 +40,7 @@ requirements:
     - markdown-it-py
     - linkify-it-py
     - mdit-py-plugins
+    - narwhals >=2
     - requests
     - bleach
     - typing_extensions
