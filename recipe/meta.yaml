@@ -31,7 +31,6 @@ requirements:
     - requests
     - packaging
   run:
-    - narwhals >=2
     - python >={{ python_min }}
     - bokeh >=3.7.0,<3.9.0
     - param >=2.1.0,<3.0
