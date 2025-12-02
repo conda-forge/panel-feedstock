@@ -22,6 +22,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - nodejs >=18
+    - conda-libmamba-solver !=25.11.0
     # These are also needed at build time.
     - hatchling
     - hatch-vcs
