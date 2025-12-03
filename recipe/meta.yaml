@@ -22,7 +22,6 @@ requirements:
     - python {{ python_min }}
     - pip
     - nodejs >=18
-    - conda-libmamba-solver !=25.11.0
     # These are also needed at build time.
     - hatchling
     - hatch-vcs
@@ -32,7 +31,6 @@ requirements:
     - requests
     - packaging
   run:
-    - pyviz-comms >=2.0.0
     - python >={{ python_min }}
     - bokeh >=3.7.0,<3.9.0
     - param >=2.1.0,<3.0
