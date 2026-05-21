@@ -26,12 +26,11 @@ requirements:
     - hatchling
     - hatch-vcs
     - param >=2.1.0
-    - bokeh >=3.7.0,<3.10.0
+    - bokeh >=3.8.0,<3.10.0
     - pyviz_comms >=0.7.4
     - requests
     - packaging
   run:
-    - nh3
     - panel-material-ui >=0.10.0
     - python >={{ python_min }}
     - bokeh >=3.8.0,<3.10.0
@@ -43,7 +42,7 @@ requirements:
     - mdit-py-plugins
     - narwhals >=2
     - requests
-    - bleach
+    - nh3
     - typing_extensions
     - pandas >=1.2
     - packaging
