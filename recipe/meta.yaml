@@ -1,4 +1,4 @@
-{% set version = "1.8.10" %}
+{% set version = "1.9.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 762881b06efb99f3d201749a3634c6b5f18f46cfca520970c2c1bb31bed42c90
+  sha256: 1d57698a324e45ab0f56b4c6f36b77591c46cf4ce5c16b1f037de10b3e8722ee
 
 build:
   number: 0
@@ -26,13 +26,14 @@ requirements:
     - hatchling
     - hatch-vcs
     - param >=2.1.0
-    - bokeh >=3.7.0,<3.10.0
+    - bokeh >=3.8.0,<3.10.0
     - pyviz_comms >=0.7.4
     - requests
     - packaging
   run:
+    - panel-material-ui >=0.10.0
     - python >={{ python_min }}
-    - bokeh >=3.7.0,<3.10.0
+    - bokeh >=3.8.0,<3.10.0
     - param >=2.1.0,<3.0
     - pyviz_comms >=2.0.0
     - markdown
@@ -41,7 +42,7 @@ requirements:
     - mdit-py-plugins
     - narwhals >=2
     - requests
-    - bleach
+    - nh3
     - typing_extensions
     - pandas >=1.2
     - packaging
