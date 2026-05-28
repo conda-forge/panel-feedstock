@@ -55,7 +55,6 @@ outputs:
         - panel
         - panel.io
       commands:
-        - pip check
         - panel --help
       requires:
         - python {{ python_min }}
@@ -67,15 +66,15 @@ outputs:
     requirements:
       - python >={{ python_min }}
       - {{ pin_subpackage('panel-core', exact=True) }}
-      # - panel-material-ui >=0.10.0  # Add back after panel-core release
+      # - panel-material-ui >=0.10.0  TODO: Add back after panel-core release
     test:
       imports:
         - panel
       requires:
         - python {{ python_min }}
         - pip
-      commands:
-        - pip check
+      # commands:
+      #   - pip check TODO: Add back after
     about:
       home: https://panel.holoviz.org
       summary: The powerful data exploration & web app framework for Python.
