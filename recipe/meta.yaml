@@ -16,10 +16,9 @@ outputs:
   - name: panel-core
     build:
       noarch: python
+      script: python -m pip install . -vv
       entry_points:
         - panel = panel.command:main
-      script:
-        - {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
         - python {{ python_min }}
