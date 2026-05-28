@@ -2,7 +2,7 @@
 {% set python_min = "3.10" %}
 
 package:
-  name: panel-core
+  name: panel
   version: {{ version }}
 
 source:
@@ -67,7 +67,7 @@ outputs:
     requirements:
       - python >={{ python_min }}
       - {{ pin_subpackage('panel-core', exact=True) }}
-      - panel-material-ui >=0.10.0
+      # - panel-material-ui >=0.10.0  # Add back after panel-core release
     test:
       imports:
         - panel
