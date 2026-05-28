@@ -2,7 +2,7 @@
 {% set python_min = "3.10" %}
 
 package:
-  name: panel
+  name: panel-core
   version: {{ version }}
 
 source:
