@@ -9,14 +9,12 @@ source:
   url: https://pypi.org/packages/source/p/panel/panel-{{ version }}.tar.gz
   sha256: ede8daa7a2515a2f3b49f19ed9aff75fcef48d6d8c3b9df3a4ebf26a551a0407
 
-build:
-  number: 1
-
 outputs:
   - name: panel-core
     build:
       noarch: python
       script: python -m pip install . -vv
+      number: 1
       entry_points:
         - panel = panel.command:main
     requirements:
@@ -62,7 +60,10 @@ outputs:
 
   - name: panel
     build:
+      number: 1
       noarch: python
+    host:
+      - python {{ python_min }}
     requirements:
       - python >={{ python_min }}
       - {{ pin_subpackage('panel-core', exact=True) }}
