@@ -10,7 +10,7 @@ source:
   sha256: ede8daa7a2515a2f3b49f19ed9aff75fcef48d6d8c3b9df3a4ebf26a551a0407
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: panel-core
@@ -66,15 +66,15 @@ outputs:
     requirements:
       - python >={{ python_min }}
       - {{ pin_subpackage('panel-core', exact=True) }}
-      # - panel-material-ui >=0.10.0  TODO: Add back after panel-core release
+      - panel-material-ui >=0.10.0
     test:
       imports:
         - panel
       requires:
         - python {{ python_min }}
         - pip
-      # commands:
-      #   - pip check TODO: Add back after
+      commands:
+        - pip check
     about:
       home: https://panel.holoviz.org
       summary: The powerful data exploration & web app framework for Python.
