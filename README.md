@@ -1,5 +1,5 @@
-About panel-feedstock
-=====================
+About panel-core-feedstock
+==========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/panel-feedstock/blob/main/LICENSE.txt)
 
@@ -33,27 +33,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-panel-green.svg)](https://anaconda.org/conda-forge/panel) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/panel.svg)](https://anaconda.org/conda-forge/panel) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/panel.svg)](https://anaconda.org/conda-forge/panel) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/panel.svg)](https://anaconda.org/conda-forge/panel) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-panel--core-green.svg)](https://anaconda.org/conda-forge/panel-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/panel-core.svg)](https://anaconda.org/conda-forge/panel-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/panel-core.svg)](https://anaconda.org/conda-forge/panel-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/panel-core.svg)](https://anaconda.org/conda-forge/panel-core) |
 
-Installing panel
-================
+Installing panel-core
+=====================
 
-Installing `panel` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `panel-core` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `panel` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `panel, panel-core` can be installed with `conda`:
 
 ```
-conda install panel
+conda install panel panel-core
 ```
 
 or with `mamba`:
 
 ```
-mamba install panel
+mamba install panel panel-core
 ```
 
 It is possible to list all of the versions of `panel` available on your platform with `conda`:
@@ -123,17 +124,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating panel-feedstock
-========================
+Updating panel-core-feedstock
+=============================
 
-If you would like to improve the panel recipe or build a new
+If you would like to improve the panel-core recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/panel-feedstock are
+Note that all branches in the conda-forge/panel-core-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
