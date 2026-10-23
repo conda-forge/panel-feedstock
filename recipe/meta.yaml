@@ -1,4 +1,4 @@
-{% set version = "1.9.4" %}
+{% set version = "1.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: 373bdb124c1b33c3dd4c112f348f4cfb2a7f1634b36a51e6ab01a4b5b6ec833c
+  sha256: ed4edce651ff08377e7927f53eccc425123a79db49afac0a7cae61436de61494
 
 build:
   number: 0
