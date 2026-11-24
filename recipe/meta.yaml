@@ -46,7 +46,6 @@ outputs:
         - requests
         - nh3
         - typing_extensions
-        - pandas >=1.2
         - packaging
         - tqdm
       run_constrained:
