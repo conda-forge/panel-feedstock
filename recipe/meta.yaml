@@ -70,7 +70,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - {{ pin_subpackage('panel-core', exact=True) }}
-        - panel-material-ui >=0.16.6,<0.17
+        - panel-material-ui >=0.16.6,<0.18
     test:
       imports:
         - panel
