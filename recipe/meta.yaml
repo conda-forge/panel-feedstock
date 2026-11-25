@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/panel/panel-{{ version }}.tar.gz
-  sha256: edbe3a8278e3d54e9a73f86b2f5634d3da42501abe7922aabbc98c0d33b12d31
+  sha256: f946a7b574ee702e44c813d99093e6f8b91e8aba86e2e16044f7d372cce00f03
 
 build:
   number: 0
@@ -70,7 +70,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - {{ pin_subpackage('panel-core', exact=True) }}
-        - panel-material-ui >=0.16.6,<0.17
+        - panel-material-ui >=0.16.6,<0.18
     test:
       imports:
         - panel
